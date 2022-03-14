@@ -42,3 +42,11 @@ li{
     min-height: 500px;
     max-height: 500px;
 }
+
+.pixel{
+    border: none;
+    outline: 1px solid black;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
