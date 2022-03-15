@@ -55,5 +55,14 @@ function loadingSize(){
         }));
 };
 
+const test2 = document.querySelector('#colorPicker');
+test2.addEventListener('input', ()=> {
+    let var4 = test2.value;
+    let draw = document.querySelectorAll('.pixel').forEach(draw => draw.addEventListener('mouseover',  ()=>{
+        draw.style.backgroundColor = var4;
+        }));
+
+});
+
 
 console.log(loadingSize());
