@@ -1,5 +1,5 @@
 const canvas = document.querySelector('.canvas');
-const colorBut = document.querySelector('#colorPicker');
+
 
 
 
@@ -18,11 +18,9 @@ function grid(num){
     };
 };
 
-let draw = document.querySelectorAll('.pixel').forEach(draw => draw.addEventListener('mouseover', 'touchmove',  ()=>{
-draw.style.backgroundColor = color;
+let draw = document.querySelectorAll('.pixel').forEach(draw => draw.addEventListener('mouseover',  ()=>{
+draw.style.backgroundColor = 'black';
 }));
-
-
 
 
 const eraseBut = document.querySelector('#erase');
@@ -45,7 +43,7 @@ function canvasSize(){
     numPixel = parseInt(newSize);
     grid(numPixel);
     let draw = document.querySelectorAll('.pixel').forEach(draw => draw.addEventListener('mouseover',  ()=>{
-        draw.style.backgroundColor = 'balck';
+        draw.style.backgroundColor = 'black';
         }));
 };
 
@@ -57,15 +55,5 @@ function loadingSize(){
         }));
 };
 
-colorBut.addEventListener('click', ()=>{
-    colorChange();
-})
-
-
-function colorChange(){
-    const color = document.querySelector('#colorPicker').value;
-    draw.style.backgroundColor = color;    
-    console.log(color);
-}
 
 console.log(loadingSize());
